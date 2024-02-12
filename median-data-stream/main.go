@@ -106,6 +106,7 @@ func (this *MedianFinder) FindMedian() float64 {
  * param_2 := obj.FindMedian();
  */
 
+// https://leetcode.com/problems/find-median-from-data-stream/description/
 func main() {
 	medianObj := Constructor()
 	medianObj.AddNum(1)
