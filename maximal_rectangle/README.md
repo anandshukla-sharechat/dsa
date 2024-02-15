@@ -1,1 +1,1 @@
-<img src="/Users/anandshukla/dsa/maximal_rectangle/img.png"/> ()
+<img src="https://github.com/anandshukla-sharechat/dsa/blob/main/maximal_rectangle/img.png"/> ()
