@@ -77,7 +77,8 @@ func maximalRectangle(matrix [][]byte) int {
 
 	dp := make([][]int, m)
 	for i := 0; i < m; i = i + 1 {
-		dp[i] = a[i]
+		dp[i] = make([]int, n)
+		copy(dp[i], a[i])
 	}
 
 	area := findMaxRectangle(dp[0])
