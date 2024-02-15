@@ -1,0 +1,1 @@
+<img src="/Users/anandshukla/dsa/maximal_rectangle/img.png"/> ()
