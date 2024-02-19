@@ -55,6 +55,7 @@ func nQueen(res *[][]string, grid [][]rune, col, n int) {
 	}
 }
 
+// https://leetcode.com/problems/n-queens/
 func solveNQueens(n int) [][]string {
 	res := make([][]string, 0)
 	// prepare board
