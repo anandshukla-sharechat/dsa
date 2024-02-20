@@ -41,10 +41,12 @@ func (this *LRUCache) Put(key int, value int) {
 		this.Queue.MoveToBack(val)
 		return
 	} else {
+		// remove element from front if queue has surpassed capacity
 		if this.Queue.Len() == this.Capacity {
 			delete(this.Map, this.Queue.Front().Value.(Store).Key)
 			this.Queue.Remove(this.Queue.Front())
 		}
+		// push element to Queue & update
 		el := this.Queue.PushBack(Store{Key: key, Val: value})
 		this.Map[key] = el
 	}
