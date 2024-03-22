@@ -85,6 +85,7 @@ func alienOrder(words []string) string {
 	}
 }
 
+// https://leetcode.com/problems/alien-dictionary/description/
 func main() {
 	words := []string{"wrt", "wrf", "er", "ett", "rftt"}
 	ans := alienOrder(words)
