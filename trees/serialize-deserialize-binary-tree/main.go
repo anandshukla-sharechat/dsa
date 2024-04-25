@@ -33,10 +33,8 @@ func (this *Codec) serialize(root *util.TreeNode) string {
 		return ans
 	}
 	this.serializedList.PushBack(root)
-	length := 0
 	for this.serializedList.Len() > 0 {
 		frontEl := this.serializedList.Remove(this.serializedList.Front()).(*util.TreeNode)
-		length--
 		if frontEl == nil {
 			ans = ans + "nil,"
 		} else {
