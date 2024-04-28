@@ -58,6 +58,7 @@ func (this *WordDictionary) Search(word string) bool {
  * param_2 := obj.Search(word);
  */
 
+// https://leetcode.com/problems/design-add-and-search-words-data-structure/description/
 func main() {
 	wordDictionary := Constructor()
 	wordDictionary.AddWord("bad")
