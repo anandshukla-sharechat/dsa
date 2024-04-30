@@ -12,11 +12,11 @@ type TrieNode struct {
 	freq     int
 }
 
-func InititialiseTrie() Trie {
-	return Trie{root: &TrieNode{}}
+func InititialiseTrie() *Trie {
+	return &Trie{root: &TrieNode{}}
 }
 
-func (t Trie) insert(word string) {
+func (t *Trie) insert(word string) {
 	node := t.root
 	for _, el := range word {
 		idx := el - 'a'
@@ -29,7 +29,7 @@ func (t Trie) insert(word string) {
 	node.isEnd = true
 }
 
-func (t Trie) search(p string) int {
+func (t *Trie) search(p string) int {
 	node := t.root
 	ans := 0
 	for _, el := range p {
