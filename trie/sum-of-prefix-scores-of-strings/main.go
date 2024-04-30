@@ -56,6 +56,7 @@ func sumPrefixScores(words []string) []int {
 	return ans
 }
 
+// https://leetcode.com/problems/sum-of-prefix-scores-of-strings/description/
 func main() {
 	words := []string{"abc", "ab", "bc", "b"}
 	ans := sumPrefixScores(words)
