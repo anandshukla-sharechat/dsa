@@ -80,6 +80,7 @@ func reverseIntArr(arr []int) []int {
 	return ans
 }
 
+// https://leetcode.com/problems/lexicographical-numbers/description/
 func main() {
 	n := 13
 	ans := lexicalOrder(n)
