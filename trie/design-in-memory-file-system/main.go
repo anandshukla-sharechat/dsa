@@ -27,9 +27,6 @@ func (this *FileSystem) Ls(path string) []string {
 		if _, ok := this.children[el]; !ok {
 			this.children[el] = &FileSystem{children: make(map[string]*FileSystem)}
 		}
-		//if i == len(ans)-2 {
-		//	break
-		//}
 		this = this.children[el]
 	}
 	for k, _ := range this.children {
