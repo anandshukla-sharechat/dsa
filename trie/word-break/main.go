@@ -56,6 +56,7 @@ func wordBreak(s string, wordDict []string) bool {
 	return false
 }
 
+// https://leetcode.com/problems/word-break/description/
 func main() {
 	s, wordDict := "leetcode", []string{"leet", "code"}
 	ans := wordBreak(s, wordDict)
