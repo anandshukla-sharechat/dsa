@@ -21,7 +21,7 @@ import (
 	"math"
 )
 
-func solve(s, t string) string {
+func minWindow(s string, t string) string {
 	// preprocess t
 	mpT := make(map[int32]int)
 	for _, el := range t {
@@ -43,14 +43,14 @@ func solve(s, t string) string {
 	for i := range s {
 
 		// binary search
-		lower, upper := i, len(s)-1
+		lower, upper := 0, len(s)-1
 		temp = ""
 		for lower <= upper {
 			mid := lower + (upper-lower)/2
 			lastIdx := min(i+mid, len(s)-1)
 			flag := -1
-			for k, _ := range mpT {
-				if (mpS[lastIdx][k] - mpS[i-1][k]) <= 0 {
+			for k, v := range mpT {
+				if (mpS[lastIdx][k] - mpS[i-1][k]) < v {
 					flag = 1
 				}
 			}
@@ -69,7 +69,11 @@ func solve(s, t string) string {
 	return ans
 }
 
+/*
+https://leetcode.com/problems/minimum-window-substring/
+265 / 268 testcases passed, rest gave TLE
+*/
 func main() {
 	s, t := "ADOBECODEBANC", "ABC"
-	fmt.Println(solve(s, t))
+	fmt.Println(minWindow(s, t))
 }
