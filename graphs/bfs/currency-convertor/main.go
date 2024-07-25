@@ -1,6 +1,6 @@
 /**
 
-UBER 1st DSA Round - 22/07/2024
+UBER 1st DSA Round - 22/07/2024 (cleared this round with a follow up question of repeated queries caching in adjacency list)
 
 We are a currency exchange that maintains the current exchange rates between currencies. A user can come to us with some amount in one currency and request the equivalent amount in a different currency. Given a list of exchange rates between currencies, write a function that calculates currency rate between any 2 currencies.
 
